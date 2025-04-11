@@ -49,7 +49,8 @@ Ce projet a pour objectif de centraliser et simplifier la gestion financière d�
 
 ##  7. Modèle conceptuel de la base :
 
->  À insérer ici : `images/mcd.png`
+![Diagramme de base de données](images/image.png)
+
 
 ---
 
