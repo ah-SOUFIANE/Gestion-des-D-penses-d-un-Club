@@ -1,23 +1,22 @@
 package entities;
 
+import javax.persistence.*;
 import java.util.Date;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.Table;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
 
 @Entity
+@IdClass(DepenseId.class)
 @Table(name = "depenses")
 public class Depense {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    @ManyToOne
+    @JoinColumn(name = "utilisateur_id")
+    private Utilisateur utilisateur;
+
+    @Id
+    @ManyToOne
+    @JoinColumn(name = "club_id")
+    private Club club;
 
     private String libelle;
     private double montant;
@@ -29,28 +28,33 @@ public class Depense {
     @JoinColumn(name = "categorie_id")
     private Categorie categorie;
 
-    @ManyToOne
-    @JoinColumn(name = "club_id")
-    private Club club;
+    public Depense() {}
 
-    @ManyToOne
-    @JoinColumn(name = "utilisateur_id")
-    private Utilisateur utilisateur;
-
-    public Depense() {
-    }
-
-    public Depense(String libelle, double montant, Date date, Categorie categorie, Club club, Utilisateur utilisateur) {
+    public Depense(Utilisateur utilisateur, Club club, String libelle, double montant, Date date, Categorie categorie) {
+        this.utilisateur = utilisateur;
+        this.club = club;
         this.libelle = libelle;
         this.montant = montant;
         this.date = date;
         this.categorie = categorie;
-        this.club = club;
+    }
+
+    // Getters and Setters...
+
+    public Utilisateur getUtilisateur() {
+        return utilisateur;
+    }
+
+    public void setUtilisateur(Utilisateur utilisateur) {
         this.utilisateur = utilisateur;
     }
 
-    public int getId() {
-        return id;
+    public Club getClub() {
+        return club;
+    }
+
+    public void setClub(Club club) {
+        this.club = club;
     }
 
     public String getLibelle() {
@@ -83,21 +87,5 @@ public class Depense {
 
     public void setCategorie(Categorie categorie) {
         this.categorie = categorie;
-    }
-
-    public Club getClub() {
-        return club;
-    }
-
-    public void setClub(Club club) {
-        this.club = club;
-    }
-
-    public Utilisateur getUtilisateur() {
-        return utilisateur;
-    }
-
-    public void setUtilisateur(Utilisateur utilisateur) {
-        this.utilisateur = utilisateur;
     }
 }

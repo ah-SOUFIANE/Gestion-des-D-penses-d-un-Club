@@ -4,18 +4,27 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/AdMin/Documents/NetBeansProjects/gestion_depense/src/java/dao/CategorieDao.java</file>
+            <file>file:/C:/Users/AdMin/Documents/NetBeansProjects/gestion_depense/src/java/dao2/DepenseDao.java</file>
+            <file>file:/C:/Users/AdMin/Documents/NetBeansProjects/gestion_depense/src/java/dao2/AbstractDao.java</file>
             <file>file:/C:/Users/AdMin/Documents/NetBeansProjects/gestion_depense/src/java/dao/IDao.java</file>
+            <file>file:/C:/Users/AdMin/Documents/NetBeansProjects/gestion_depense/src/java/test/TestUtilisateurs.java</file>
+            <file>file:/C:/Users/AdMin/Documents/NetBeansProjects/gestion_depense/src/java/test/TestCategorie.java</file>
+            <file>file:/C:/Users/AdMin/Documents/NetBeansProjects/gestion_depense/src/java/dao2/ClubDao.java</file>
             <file>file:/C:/Users/AdMin/Documents/NetBeansProjects/gestion_depense/src/java/entities/Utilisateur.java</file>
             <file>file:/C:/Users/AdMin/Documents/NetBeansProjects/gestion_depense/src/java/dao/UtilisateurDao.java</file>
+            <file>file:/C:/Users/AdMin/Documents/NetBeansProjects/gestion_depense/src/java/dao2/UtilisateurDao.java</file>
+            <file>file:/C:/Users/AdMin/Documents/NetBeansProjects/gestion_depense/src/java/test/TestDepenses.java</file>
             <file>file:/C:/Users/AdMin/Documents/NetBeansProjects/gestion_depense/src/java/entities/Depense.java</file>
             <file>file:/C:/Users/AdMin/Documents/NetBeansProjects/gestion_depense/src/java/dao/DepenseDao.java</file>
             <file>file:/C:/Users/AdMin/Documents/NetBeansProjects/gestion_depense/web/index.html</file>
+            <file>file:/C:/Users/AdMin/Documents/NetBeansProjects/gestion_depense/src/java/dao2/CategorieDao.java</file>
             <file>file:/C:/Users/AdMin/Documents/NetBeansProjects/gestion_depense/src/java/entities/Club.java</file>
             <file>file:/C:/Users/AdMin/Documents/NetBeansProjects/gestion_depense/src/java/entities/Categorie.java</file>
             <file>file:/C:/Users/AdMin/Documents/NetBeansProjects/gestion_depense/src/java/dao/AbstractDao.java</file>
             <file>file:/C:/Users/AdMin/Documents/NetBeansProjects/gestion_depense/src/java/dao/ClubDao.java</file>
-            <file>file:/C:/Users/AdMin/Documents/NetBeansProjects/gestion_depense/src/java/resources/hibernate.cfg.xml</file>
+            <file>file:/C:/Users/AdMin/Documents/NetBeansProjects/gestion_depense/src/java/test/TestCreation.java</file>
             <file>file:/C:/Users/AdMin/Documents/NetBeansProjects/gestion_depense/src/java/util/HibernateUtil.java</file>
+            <file>file:/C:/Users/AdMin/Documents/NetBeansProjects/gestion_depense/src/java/dao2/IDao.java</file>
             <file>file:/C:/Users/AdMin/Documents/NetBeansProjects/gestion_depense/src/java/test/Test.java</file>
         </group>
     </open-files>

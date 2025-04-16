@@ -1,9 +1,9 @@
 package test;
 
-import dao.UtilisateurDao;
-import dao.CategorieDao;
-import dao.ClubDao;
-import dao.DepenseDao;
+import dao2.UtilisateurDao;
+import dao2.CategorieDao;
+import dao2.ClubDao;
+import dao2.DepenseDao;
 
 import entities.Utilisateur;
 import entities.Categorie;
@@ -32,7 +32,11 @@ public class Test {
                 break;
             }
         }
-        Utilisateur admin = new Utilisateur("Soufiane", "soufiane@mail.com", "admin123", "admin");
+        Club club = clubDao.findById(1); // ou un club existant
+        Date date = new Date();
+
+        Utilisateur admin = new Utilisateur("Soufiane", "Test", "soufiane@mail.com", "admin123", "admin", date, club);
+
         if (!userExists) utilisateurDao.create(admin);
 
         //  Vérifier les catégories
@@ -63,8 +67,8 @@ public class Test {
             if ("Achat Arduino".equals(d.getLibelle())) dep1Exists = true;
             if ("Location Bus".equals(d.getLibelle())) dep2Exists = true;
         }
-        if (!dep1Exists) depenseDao.create(new Depense("Achat Arduino", 1200.0, new Date(), cat1, club1, admin));
-        if (!dep2Exists) depenseDao.create(new Depense("Location Bus", 600.0, new Date(), cat2, club2, admin));
+//        if (!dep1Exists) depenseDao.create(new Depense("Achat Arduino", 1200.0, new Date(), cat1, club1, admin));
+//        if (!dep2Exists) depenseDao.create(new Depense("Location Bus", 600.0, new Date(), cat2, club2, admin));
 
         //  Affichage
         List<Depense> allDepenses = depenseDao.findAll();
