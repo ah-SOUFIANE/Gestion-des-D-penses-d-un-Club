@@ -49,7 +49,7 @@ Ce projet a pour objectif de centraliser et simplifier la gestion financière d�
 
 ##  7. Modèle conceptuel de la base :
 
-![Diagramme de base de données](images/image.png)
+![Diagramme de base de données](images/Screenshot 2025-04-17 002913.png)
 
 
 ---
